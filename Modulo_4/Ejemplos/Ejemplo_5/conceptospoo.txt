@@ -1,0 +1,111 @@
+//objeto
+let persona =  {
+    nombre: "Rafaela",
+    edad :  25,
+    colorCabello : "castaño",
+    idioma(){
+        console.log('español');
+    }
+}
+
+
+//clases
+class Personas {
+    constructor(nombre, edad, colorCabello) {
+        this.nombre =  nombre;
+        this.edad = edad;
+        this.colorCabello = colorCabello;
+
+    }
+}
+
+let perro = {
+    nombre: "Bobby",
+    edad: 3,
+    color:  "negro",
+    ladrar(){
+        console.log('Guau guau');
+    }
+
+}
+
+class animal {
+    constructor(nombrePerro) {
+        this.nombrePerro = nombre;
+        this.edadPerro = edadPerro;
+        this.colorPerro = colorPerro;
+    }
+}
+
+//encapsulacion
+//encapsulacion es la capacidad  de ocultar la informacion interna de un objeto y
+//exponer solo la informacion que se requiere para interactuar con el objeto
+
+class Autos{
+    constructor(marca){
+        this._marca = marca;
+    }
+}
+
+get marca(){
+    return this._marca;
+}
+//setters dan valor a una propiedad (mutadores) 
+set marca(nuevaMarca){
+    this._marca =  nuevaMarca;
+}
+
+let miAuto  = new Autos('Toyota');
+console.log(miAuto.marca);
+
+miAuto.marca = "Toyota";
+console.log(miAuto.marca);
+
+//Herencia
+//la herencia es la capacidad de crear un objeto que hereda las propiedades y
+//metodos de otro objeto
+
+class Animal {
+    constructor(nombre) {
+        this.nombre = nombre;
+    }
+}
+
+hablar(){
+    console.log('${this.nombre} hace ruido ');
+}
+
+class  Perro extends Animal {
+    hablar({
+        console.log('${this.nombre} ladra');
+    })
+}
+
+polimorfismo: es la capacidad de tomar diferentes formas,
+es decir, un objeto puede tener diferentes comportamientos en diferentes situaciones.
+
+class Animal{
+    hablar() {
+        console.log('Animal habla')
+    }
+}
+
+class  Perro extends Animal {
+    hablar({
+        console.log('ladra');
+    })
+}
+class Gato extends Animal{
+    hablar(){
+        console.log('miau - miau');
+    }
+}
+
+funtion hacerHablarAnimal(Animal){
+    Animal.hablar();
+}
+
+// llamado a la funcion con un objeto de tipo perro
+hacerHablarAnimal(new Perro());
+hacerHablarAnimal(new Gato());
+

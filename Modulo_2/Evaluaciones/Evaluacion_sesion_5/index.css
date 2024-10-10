@@ -1,0 +1,19 @@
+h3{
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    padding-top: 3%;
+
+}
+
+.card{
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+

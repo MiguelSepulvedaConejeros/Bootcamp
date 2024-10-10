@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: gray;
+}
+.nav{
+    background: blue;
+    padding: 25px;
+    text-align: center;
+    font-size: 50px;
+}
+.nav__item--titulo{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+.fecha{
+    background-color: aqua;
+    color: black;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border-top: solid;
+    border-bottom: solid;
+
+}
+.container{
+    position: relative;
+    margin: 10px;
+}
+.principal{
+    width: 400px;
+    position: absolute;
+    left: 500px;
+}   
+.titulo_principal{
+    color: rgb(red, green, blue);
+    -webkit-text-stroke: 2px rgb(235, 224, 224);
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    left: 20px;
+}
+.pagina_titulo{
+    float: right;
+    background: rgb(red, green, blue);
+    color: white;
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+    padding: 15px;
+}
+.noticias h2{
+    margin: 10px;
+    text-align: left;
+    font-size: 30px;
+}
+.noticias p{
+    margin: 10px;
+    text-align: left;
+    font-size: 25px;
+}
+.pagina{
+    float: right;
+    background: rgb(red, green, blue);
+    position: absolute;
+    top: 130px;
+    left: 290px;
+    padding: 15px;
+}
+.noticias1{
+    background: purple;
+    color: white;
+    width: 370px;
+    height: 200px;
+    position: absolute;
+    top: 603px;
+    left: 0px;
+    border-radius: 10px;
+}
+.noticias2{
+    background: green;
+    color: white;
+    width: 370px;
+    height: 200px;
+    position: absolute;
+    top: 603px;
+    left: 380px;
+    border-radius: 10px;
+}
+.noticias3{
+    background: red;
+    color: white;
+    width: 370px;
+    height: 200px;
+    position: absolute;
+    top: 603px;
+    left: 760px;
+    border-radius: 10px;
+}
+.noticias4{
+    background: yellow;
+    color: white;
+    width: 370px;
+    height: 200px;
+    position: absolute;
+    top: 603px;
+    left: 1140px;
+    border-radius: 10px;
+}

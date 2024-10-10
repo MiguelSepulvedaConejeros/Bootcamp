@@ -1,0 +1,10 @@
+ input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+ }
+ .correo{
+    position: absolute;
+    left: 15rem;
+    top: 5rem;
+ }

@@ -1,0 +1,59 @@
+.container{
+    position: relative;
+    margin: 400px;
+}
+.cuadrado1{
+    width: 400px;
+    height: 400px;
+    background: #de9230;
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+.cuadrado2{
+    width: 400px;
+    height: 400px;
+    background: #3b900a;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    z-index: 3;
+}
+.cuadrado3{
+    width: 400px;
+    height: 400px;
+    background: #1a02f0;
+    position: relative;
+    left: 0px;
+    top: 300px;
+    z-index: 3;
+}
+.cuadrado4{
+    width: 400px;
+    height: 400px;
+    background: #f80303;
+    position: absolute;
+    left: 0px;
+    top: -300px;
+    z-index: 2;
+}
+.cuadrado5{
+    width: 400px;
+    height: 200px;
+    background: #fce703;
+    position: absolute;
+    left: -300px;    
+    top: 0;
+    z-index: 1;
+
+}
+.cuadrado6{
+    width: 400px;
+    height: 200px;
+    background: #fce703;
+    position: absolute;
+    left: -300px;    
+    top: 200px;
+    z-index: 3;
+
+}

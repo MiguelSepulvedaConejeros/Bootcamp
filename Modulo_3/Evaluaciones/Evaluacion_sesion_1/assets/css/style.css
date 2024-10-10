@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: url("https://img.freepik.com/vector-gratis/fondo-verano-realista_52683-62823.jpg?w=1380&t=st=1725068591~exp=1725069191~hmac=5685783cab77553cfa6fad58880433430970cc8ea8ec2d8d4de263e2688b237d");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    height: 1000px;
+}
+.navigation{
+    padding: 23px;
+    background-color: aqua;
+    font-size: 30px;
+    text-align: left;
+}
+.navigation_item--bold{
+    font-weight: bold;
+}
+.navigation_item{
+    margin-left: 25px;
+}
+.banner{
+    margin-top: 100px;
+    background-color: whitesmoke;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 999px;
+}
+.banner__titulo{
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+}
+.banner__parrafo{
+    margin: 20px;
+    font-size: 25px;
+}
+.form{
+    background: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 825px;
+    top: 450px;
+    font-size: 35px;
+    opacity: 0.8;
+}
+.form__item {
+    padding: 48px;
+}
+.form__item--margin{
+    margin-left: 183px;
+}
+input{
+    font-size: large;
+}
+.btn{
+    width: 150px;
+    height: 55px;
+    font-size: 30px;
+    position: absolute;
+    left: 1158px;
+    top: 850px;
+    border-radius: 10px;
+    background-color: aqua;
+    opacity: 0.8;
+}
+.footer{
+    width: 2548px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: aqua;
+    position: absolute;
+    top: 1244px;
+
+}
+.footer__item--left{
+    text-align: right;   
+}
+.footer__item1{
+    position: absolute;
+    left: 2050px;
+}
+.footer__item2{
+    position: absolute;
+    left: 2250px;
+}
+.footer__item3{
+    position: absolute;
+    left: 2430px;
+}

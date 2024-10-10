@@ -1,0 +1,4 @@
+//matrices: son un tipo de dato que almacena un conjunto de valores de igual tipo
+//en una sola variable
+//se pueden crear matrices de diferentes tipos de datos, como numeros, strings, objetos, etc.
+//las matrices se pueden crear de diferentes maneras

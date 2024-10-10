@@ -1,0 +1,96 @@
+/* Common styles */
+.rosado {
+    background-color: pink;
+  }
+  
+  .verde {
+    background-color: green;
+  }
+  
+  .azul {
+    background-color: blue;
+  }
+  
+  .rojo {
+    background-color: red;
+  }
+  
+  .morado {
+    background-color: purple;
+  }
+  
+  .gris {
+    background-color: gray;
+  }
+  
+  /* Media queries */
+  @media (max-width: 500px) {
+    .rosado, .verde, .azul, .gris {
+      width: 100%;
+    }
+    .rosado, .verde {
+      height: 25dvh;
+    }
+    .azul {
+      height: 20dvh;
+    }
+    .gris {
+      height: 30dvh;
+    }
+  }
+  
+  @media (min-width: 501px) and (max-width: 750px) {
+    .rosado {
+      width: 100%;
+      height: 25dvh;
+    }
+    .verde, .azul {
+      width: 33%;
+      height: 25vh;
+      display: inline-block;
+    }
+
+    .rojo{
+        width: 32%;
+        height: 25vh;
+        display: inline-block;
+    }
+    .morado {
+      width: 58%;
+      height: 50vh;
+      display: inline-block;
+    }
+    .gris {
+      width: 40%;
+      height: 50vh;
+      display: inline-block;
+    }
+  }
+  
+  @media (min-width: 751px) {
+    .rosado {
+      width: 100%;
+      height: 5vh;
+    }
+    .verde {
+      width: 100%;
+      height: 25vh;
+    }
+    .azul {
+      width: 100%;
+      height: 30vh;
+    }
+    .rojo, .morado, .gris {
+      display: inline-block;
+      height: 30vh;
+    }
+    .rojo {
+      width: 33vw;
+    }
+    .morado {
+      width: 33dvw;
+    }
+    .gris {
+      width: 30.8dvw;
+    }
+  }

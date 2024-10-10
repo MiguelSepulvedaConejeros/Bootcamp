@@ -1,0 +1,16 @@
+armar proyecyo...
+copiar link
+git clone URL
+cd "Nombre carpeta clonada"
+git Status   (Para saber estado de proyecto).
+git branch -a  (Revisar todas las ramas disponibles, locale sy remotas)
+git branch mi-rama (crear rama)
+git checkout  mi-rama (Cargar Rama)
+git checkout -b mi-rama (El flag -bindica que se debe crear la rama si no existe)
+git add . (subir tdos los cambios)
+git add nombre archivo (si tiene cambio especifico)
+git commit -m "mi comentario  
+git commit -a -m "comentario" (preparar y confirmar todos los cambios a la vez) 
+git push origin exequiel_munoz (Si da error por permisos psar a paso siguiente)
+git
+git push -u origin mi-rama
