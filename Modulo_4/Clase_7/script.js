@@ -21,3 +21,7 @@ console.log(texto5.replace("Mundo", "Pablito Neuquen")); //Hola Plablito Neuquen
 
 let texto6 = "15123456 - K";
 console.log(texto6.replace("-", "Pablito Neuquen")); //Hola Plablito Neuquen
+
+//dividir cadenas
+let texto7 = "Hola, Mundo";
+console.log(texto7.split(",")); //[Hola, Mundo]
