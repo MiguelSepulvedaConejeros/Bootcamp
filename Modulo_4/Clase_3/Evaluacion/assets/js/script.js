@@ -17,7 +17,7 @@ function reservaAsientos(){
                 reservaAsientos()
                 break;
         }
-        alert("Ingrese una opcion valida");
+        alert("La cantidad de asientos debe ser un numero positivo");
         reservaAsientos();
     }
 }
