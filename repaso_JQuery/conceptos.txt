@@ -1,0 +1,32 @@
+¿Que es el DOM?
+es todo mi html, puedo modificar con js
+
+JQuery = es una biblioteca que ayuda a js
+
+$ = seleccionar elementos
+
+$("p").css("color", "blue");
+
+cambiar contenido
+
+$("p").text("Nuevo texto");
+$("#miDiv").html("<strong>Texto negrita </strong>");
+
+cambiar atributo
+
+$("img").attr("src", "nueva_img.jpg");
+
+Gestion eventos
+
+click(), hover(), keypress() ...
+
+$("button").click(function()){
+    alert("Has pulsado el botón");
+};
+
+animaciones // mostrar y ocultar
+
+$("p").hide(); // ocultar un parrafo
+
+$("p").show(); // mostrar un parrafo
+

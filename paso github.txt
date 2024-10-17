@@ -14,3 +14,7 @@ git commit -a -m "comentario" (preparar y confirmar todos los cambios a la vez)
 git push origin exequiel_munoz (Si da error por permisos psar a paso siguiente)
 git
 git push -u origin mi-rama
+
+install babel
+npm install --save-dev babel-cli
+npm install --save-dev babel-preset-env

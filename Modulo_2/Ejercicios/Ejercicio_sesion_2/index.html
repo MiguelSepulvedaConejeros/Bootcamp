@@ -13,7 +13,7 @@
         <br><strong><label for="direccion">DIRECCION</label></strong>
         <br><input type="text" name="direccion" id="direccion"><br>
         <br><strong><label for="lista">ESPECIALIDAD MEDICA</label></strong>
-        <br><input type="text" name="lista" list="especialidad"><br>
+        <br><input type="text" name="lista" list="especialidad" aria-label="label"><br>
         <datalist label="interna" id="especialidad">
             <option id="interna"">MEDICINA INTERNA</option>
             <option id="general">MEDICINA GENERAL</option>
@@ -21,12 +21,12 @@
             <option id="nutricionista">NUTRICIONISTA</option>
         </datalist>
         <br><strong><label for="text">FECHA</label></strong>
-        <br><input type="date" name="fecha" id="fecha"><br>
+        <br><input aria-label="label" type="date" name="fecha" id="fecha"><br>
         <br><strong><label for="text">HORA</label></strong>
-        <br><input type="time" name="fecha" id="fecha"><br>
+        <br><input aria-label="label" type="time" name="hora" id="hora"><br>
         <br><strong><label for="text">CORREO</label></strong>
-        <br><input type="email" name="correo" id="correo"><br>
-        <br><button>CONFIRMAR</button>
+        <br><input aria-label="label" type="email" name="correo" id="correo"><br>
+        <br><button type="submit">CONFIRMAR</button>
     </form>
 </body>
 </html>
