@@ -6,7 +6,7 @@
 }
 
 .nav {
-  background: #a3dcee;
+  background: #f5a364;
   padding: 18px;
 }
 
@@ -44,7 +44,6 @@
 img{
   width: 200px;
   height: 200px;
-  border: 2px solid;
 }
 .column {
   float: left;
@@ -67,31 +66,17 @@ img{
   padding: 10px;
 }
 
-.boton {
-  background-color: #faa05a;
-  color: black;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-}
-
 .card {
   max-width: 300px;
   margin: auto;
   text-align: justify;
   font-family: Verdana;
-  color: #580779;
 }
 
 .card p {
   margin: 20px;
 }
 
-.price {
-  color: rgb(213, 16, 210);
-  font-size: 22px;
-}
 
 .botones {
   border: none;
@@ -136,17 +121,12 @@ input[type=submit]:hover {
   background-color: #dc804a;
 }
 
-.container {
-  border-radius: 5px;
-  margin: 20px 20px 85px 20px;
-  padding: 10px;
-}
 
 .footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  background: #a3dcee;
+  background: #f5a364;
   font-size: 12px;
   padding: 10px;
 }
