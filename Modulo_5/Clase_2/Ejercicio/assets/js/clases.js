@@ -1,7 +1,7 @@
 class Normal{
     constructor(email, password){
         this.email = email;
-        this.email = password;
+        this.password = password;
     }
     mostrarDatos(){
         return `Email: ${this.email} \nContraseña ${this.password}`
