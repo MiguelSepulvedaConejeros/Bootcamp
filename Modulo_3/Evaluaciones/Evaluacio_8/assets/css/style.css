@@ -1,0 +1,21 @@
+body{
+    background: gray;
+}
+form{
+    width: 60%;
+    padding:  100px;
+    display: flex;
+    justify-self: center;
+}
+label{
+    color: white;
+}
+input:focus{
+    background-color: black !important;
+}
+.btn:hover {
+    transform: translateX(500px);
+}
+.btn {
+    transition: transform 0.5s;
+}

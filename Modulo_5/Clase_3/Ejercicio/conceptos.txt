@@ -1,0 +1,18 @@
+¿Que son los parametros?
+
+funcion = receta
+parametros = ingredientes
+
+function receta(ingredientes){
+    return ingredientes + "es un ingredientes de la receta";
+}
+
+parametros por defectos
+
+function tallarines(salsa = "sin salsa"){
+    return "Tallarines con " + salsa;
+}
+
+function tallarines(...numerosIngredientes){
+    return numerosIngredientes.reduce((total, num)=> total  + num, 0);
+}

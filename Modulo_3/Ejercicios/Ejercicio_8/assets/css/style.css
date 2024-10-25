@@ -1,0 +1,28 @@
+.cat{
+    display: flex;
+    justify-self: center;
+    position:relative;
+    animation: mycat 6s  infinite;
+}
+@keyframes mycat{
+    0%   {top: 0px; right: 0px; background: red;}
+    25%  {top: 0px; right: 800px; background: blue;}
+    50%  {top: 750px; right: 800px; background: yellow;}
+    75%  {top: 750px; right: 0px; background: green;}
+    100% {top: 0px; right: 0px; background: red;}
+}
+.dog{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-self: flex-end;
+    position:relative;
+    animation: mydog 6s  infinite;
+}
+@keyframes mydog{
+    0%   {top: 0px; right: 0px; background: red;}
+    25%  {top: 0px; right: 1400px; background: blue;}
+    50%  {top: 500px; right: 1400px; background: yellow;}
+    75%  {top: 500px; right: 0px; background: green;}
+    100% {top: 0px; right: 0px; background: red;}
+}
