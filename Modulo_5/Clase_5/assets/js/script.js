@@ -36,42 +36,25 @@ $(function (){
  
 $(document).ready(function(){
  
-    let precioPolera = [44000, 44000, 44000];
-    const descuento = 0.1;
-    const costoEnvio = 5000;
-    let cantidadPoleras = 0;
-    let totalPoleras = 0;
-    const Value = $('#code').val();
- 
-    function calcularTotal(){
-        totalPoleras = 0;
-        $('.main').each(function(index){
-            let cantidad = parseInt($(this).find('.border').text());
-            totalPoleras += precioPolera[index] * cantidad;
-        });
-       
-        $('#bt').click(function() {
-            const Value = $('#code').val();
-            console.log(Value)
-            
-            switch(Value){
-                case 'javascript':
-                discount = 0,1;
-                break;
-                default:
-                alert ('codigo de descuento invalido');
-                return;
-            }
-        });
-        
-        
- 
-        totalPoleras += costoEnvio;
-        $('.summary .text-right').text('$' + totalPoleras);
-    }
- 
-        //evento click + y -
- 
+
+        let precioPolera = [44000, 44000, 44000];
+        let descuento = 0;
+        const costoEnvio = 5000;
+        function calcularTotal(){
+            let totalPoleras = 0;
+            let cantidadT = 0
+            $('.main').each(function(index){        
+                let cantidad = parseInt($(this).find('.border').text());
+                totalPoleras += precioPolera[index] * cantidad;
+                cantidadT += cantidad;
+            });
+            $('.article').text(cantidadT + `  articulos`);
+            let totalConDescuento = totalPoleras * (1 - descuento);
+            $('.artiTotal').text('$' + totalConDescuento);
+            // Sumar costo de envío
+            let totalP = totalConDescuento + costoEnvio;
+            $('.priceTotal').text('$' + totalP);
+        }
         $('.main a').click(function(e){
             e.preventDefault();
             let elementoCantidad = $(this).siblings('.border');
@@ -82,10 +65,57 @@ $(document).ready(function(){
             } else if ($(this).text() === '-' && cantidadActual > 0){
                 cantidadActual--;
             }
- 
             elementoCantidad.text(cantidadActual);
             calcularTotal();
         });
- 
-        calcularTotal();
+        $('#btnD').click(function() {
+        let codigoDescuento = $('#code').val().trim().toLowerCase();
+        
+        // Aquí puedes definir qué descuento aplicar según el código
+        if (codigoDescuento === "javascript") {
+            descuento = 0.1; // 10% de descuento
+        } else {
+            descuento = 0; // Sin descuento si el código no es válido
+        }
+
+        calcularTotal(); // Recalcular total con descuento
+    });
+        
 });
+
+
+/* $('#bt').click(function() {
+    const Value = $('#code').val();
+    console.log(Value)
+    
+    switch(Value){
+        case 'javascript':
+        discount = 0,1;
+        break;
+        default:
+        alert ('codigo de descuento invalido');
+        return;
+    }
+}); */
+
+/*     let precioPolera = [44000, 44000, 44000];
+    const descuento = 0.1;
+    const costoEnvio = 5000;
+    let cantidadPoleras = 0;
+    let  totalPoleras = 0;
+    let cantidadT = 0
+    const Value = $('#code').val();
+ 
+    function calcularTotal(){
+        $('.main').each(function(index){
+            let cantidad = parseInt($(this).find('.border').text());
+            totalPoleras += precioPolera[index] * cantidad;
+            cantidadT += cantidad;
+            $('#article').text(cantidadT + ` articulos`)
+        });
+
+        
+ 
+        totalPoleras += costoEnvio;
+        $('preciTotal').text('$' + totalPoleras);
+    } */
