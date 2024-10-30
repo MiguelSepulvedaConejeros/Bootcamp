@@ -1,0 +1,20 @@
+.row{
+    width: 550px;
+    height: 400px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 22%, rgba(70,226,252,1) 65%);
+}
+
+.card{
+    width: 20rem;
+    height: 70%;
+    margin-top: 50px;
+    margin-left:  110px !important;
+}
+.btn{
+    margin-top: 20px !important;
+}
+
+#here{
+    font-size: 30px !important;
+}
