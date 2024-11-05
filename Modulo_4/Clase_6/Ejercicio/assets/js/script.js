@@ -99,7 +99,7 @@ function getTotals() {
     document.getElementById('drinkPrice').innerHTML = '';
     document.getElementById('foodPrice').innerHTML = '';
     document.getElementById('finalPrice').innerHTML = '0';
-    if (meals.length && drink.length === 1){
+    if (meals.length === 1 && drink.length === 1){
         // Muestra los item con precio en la consola
         console.log('Drink')
         console.log(drink[0])
@@ -118,6 +118,6 @@ function getTotals() {
         var finalPrice =  drinkp[0] + mealsp[0]
         document.getElementById('drinkPrice').innerHTML = `$${drinkp[0]}0`;
         document.getElementById('foodPrice').innerHTML = `$${mealsp[0]}0`;
-        document.getElementById('finalPrice').innerHTML = finalPrice+0;
+        document.getElementById('finalPrice').innerHTML = `$${finalPrice.toFixed(3)}`;
     }
 }
