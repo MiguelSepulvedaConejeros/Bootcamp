@@ -1,0 +1,11 @@
+npm install -g @vue/cli
+
+vue --version
+
+vue create nombre-del-proyecto
+
+cd nombre-del-proyecto
+
+npm run serve
+
+npm audit fix

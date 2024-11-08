@@ -1,58 +1,85 @@
-//fc crear objetos de tarea
-function Tarea(descripcion){
-    this.descripcion = descripcion;
-    this.completada = false;
-}
-
-//fc principal/*entraga las tareas que realizan y las agrega a una lista */
-function gestionarTareas(){
-    const listaTareas =[];
-
-    //agregar tareas//splice borra un elemto especifico del array
-
-    function agregarTarea(descripcion){
-        const nuevaTarea = new Tarea(descripcion)
-            listaTareas.push(nuevaTarea);
-    
+// Clase para crear objetos de tarea
+class Tarea {
+    constructor(descripcion) {
+      this.descripcion = descripcion;
+      this.completada = false;
     }
-    //fc marcar las tareas
-    function marcarTareaCompletada(index){
-        if (index >= 0 && index < listaTareas.length){
-            listaTareas[index].completada = true;
-        }
+  }
+  
+  // Clase para gestionar tareas
+  class Tareas {
+    constructor() {
+      this.listaTareas = [];
     }
-    //filtro tarea x estado, pdte o completada
-
-    function filtrarTarea(estado) {
-        return listaTareas.filter(tarea => tarea.completada === estado);
+  
+    agregarTarea(descripcion) {
+      if (descripcion) {
+        const nuevaTarea = new Tarea(descripcion);
+        this.listaTareas.push(nuevaTarea);
+        return this; // Permitir encadenar métodos
+      } else {
+        console.error("La descripción de la tarea no puede estar vacía.");
+      }
     }
-
-    //mostrar nro total de tareas
-    function mostrarNroTotalTareas(){
-        console.log(`El número totas de tareas: ${listaTareas.length}`);
+  
+    completarTarea(index) {
+      if (index >= 0 && index < this.listaTareas.length) {
+        this.listaTareas[index].completada = true;
+      } else {
+        console.error("Índice fuera de rango.");
+      }
+      return this; // Permitir encadenar métodos
     }
-
-    //ej de uso
-    agregarTarea("Leer papers");
-    agregarTarea("Prácticar HTML, CSS y JS");
-    agregarTarea("Realizar los Ejercicios de Consolidación");
-
-    marcarTareaCompletada(0);
-
-    const tareasPendientes = filtrarTarea(false);
-    console.log("Tareas pendientes ", tareasPendientes);
-
-    mostrarNroTotalTareas();
-
-}
-
-
-//llamar fc principal
-
-gestionarTareas();
-
-
-
-
-
-
+  
+    eliminarTarea(index) {
+      if (index >= 0 && index < this.listaTareas.length) {
+        this.listaTareas.splice(index, 1);
+      } else {
+        console.error("Índice fuera de rango.");
+      }
+      return this; // Permitir encadenar métodos
+    }
+  
+    filtrarTareas(estado) {
+    if (typeof estado !== 'boolean') {
+      console.error("El estado debe ser un booleano.");
+      return [];
+    }
+    return this.listaTareas.filter((tarea) => tarea.completada === estado);
+  }
+  
+    mostrarNumeroTotalTareas() {
+      console.log(`Número total de tareas: ${this.listaTareas.length}`);
+    }
+  
+    mostrarTareas() {
+      if (this.listaTareas.length > 0) {
+        console.log("Lista de tareas:");
+        this.listaTareas.map((tarea, index) => {
+          console.log(
+            `${index + 1}. ${tarea.descripcion} - ${
+              tarea.completada ? "Completada" : "Pendiente"
+            }`
+          );
+        });
+      } else {
+        console.log("No hay tareas en la lista.");
+      }
+    }
+  }
+  
+  // Ejemplos de uso
+  const tareas = new Tareas();
+  
+  tareas
+    .agregarTarea("Hacer ejercicio")
+    .agregarTarea("Estudiar JavaScript")
+    .agregarTarea("Preparar la cena")
+    .completarTarea(0)
+    .eliminarTarea(2);
+  
+  const tareasPendientes = tareas.filtrarTareas(false);
+  console.log("Tareas pendientes:", tareasPendientes);
+  
+  tareas.mostrarTareas();
+  tareas.mostrarNumeroTotalTareas();

@@ -1,4 +1,4 @@
-# ejercicios_varios
+# ejercicio
 
 ## Project setup
 ```
