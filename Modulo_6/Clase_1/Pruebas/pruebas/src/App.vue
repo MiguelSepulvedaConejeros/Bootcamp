@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Mycomponent />
+  <div id="app">
+    <CalculadoraEdad />
+  </div>
 </template>
 
 <script>
-import Mycomponent from './components/mycomponent.vue';
+import CalculadoraEdad from './components/CalculadoraEdad.vue';
 
 export default {
   name: 'App',
   components: {
-    Mycomponent
+    CalculadoraEdad
   }
 }
 </script>

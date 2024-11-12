@@ -9,3 +9,4 @@ cd nombre-del-proyecto
 npm run serve
 
 npm audit fix
+ 

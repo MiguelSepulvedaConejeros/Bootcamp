@@ -1,4 +1,4 @@
-# ejercicio
+# pruebas
 
 ## Project setup
 ```
