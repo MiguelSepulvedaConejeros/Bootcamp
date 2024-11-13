@@ -1,0 +1,6 @@
+que se refiere con key unica?
+se usa key para extraer el dato especifico a traves de su propiedad
+
+como llamo la imagen del pokemon?
+
+que significa que convierta la respuesta a JSON?

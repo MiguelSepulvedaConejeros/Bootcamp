@@ -1,0 +1,21 @@
+const app = {
+    data() {
+      return {
+        pokemon: []
+      };
+    },
+    methods: {
+      async fetchPokemonData() {
+        try {
+          const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+          const data = await response.json();
+          this.pokemon = data.results; // Almacena los resultados en el array pokemon
+        } catch (error) {
+          console.error('Error fetching Pokémon data:', error);
+        }
+      }
+    },
+    mounted() {
+      this.fetchPokemonData(); // Llama al método al montar el componente
+    }
+  };
