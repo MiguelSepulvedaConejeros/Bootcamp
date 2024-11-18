@@ -1,9 +1,9 @@
 <template>
-  <PostContainer/>
+  <CounterComposition/>
 </template>
 
 <script lang="js" setup>
-  import PostContainer from './components/PostContainer.vue';
+  import CounterComposition from './components/CounterComposition.vue';
 </script>
 
 <style>
