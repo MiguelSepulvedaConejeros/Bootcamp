@@ -1,0 +1,66 @@
+-- Error mas comun
+Access to XMLHttpRequest has been blocked by CORS policy
+
+
+--js
+
+// node js + express
+
+const cors = require('cors');
+const express = require('express');
+const app = express();
+
+// configurar el cors para que permita visitas de cualquier origen
+
+app.use(cors());
+
+// configurar el cors para que permita visitas de origen especifico
+
+app.use(cors({ origin: 'http://localhost:8080'}));
+
+app.get('/api/data', (req, res) => {
+	res.json({ message: 'Hola desde el servidor'});
+});
+
+app.listen(3000, ()=> console.log('Servidor corriendo en el puerto 3000 '));
+
+
+-------------------------------------------------------------------------------
+--archivo vue.config.js
+
+module.exports = {
+  devServer: {
+    proxy: {
+      '/api': { // Todas las llamadas a '/api' pasarán por aquí
+        target: 'https://servidor-con-cors.com', // Dirección del servidor
+        changeOrigin: true,
+        pathRewrite: { '^/api': '' } // Opcional: reescribe la ruta
+      }
+    }
+  }
+};
+
+---------------------------------------------------------------------------------
+//llamar API
+
+import axios from 'axios';
+
+export default{
+	data(){
+	return{
+		mensaje: ''
+		};
+	};
+	},
+	
+	created() {
+		axios.get('api/data')
+			.then(response => {
+			this.mensaje = response.data.message;
+	})
+	.cath(error =>{
+		console.error('Error: ', error);
+	});
+	}
+	
+	};

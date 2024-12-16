@@ -9,4 +9,5 @@ cd nombre-del-proyecto
 npm run serve
 
 npm audit fix
- 
+
+npx prettier --write . //corrige el pettrier

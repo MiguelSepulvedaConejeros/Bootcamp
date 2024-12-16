@@ -1,11 +1,10 @@
 <template>
-  <CounterComposition/>
+  <ComputedExample/>
 </template>
 
 <script lang="js" setup>
-  import CounterComposition from './components/CounterComposition.vue';
+import ComputedExample from './components/ComputedExample.vue';
 </script>
 
 <style>
-
 </style>

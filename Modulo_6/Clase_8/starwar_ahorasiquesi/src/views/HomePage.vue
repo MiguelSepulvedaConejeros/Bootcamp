@@ -53,9 +53,9 @@ width: 100%;
 height: 100vh;
 }
 .img_starwars{
-  position:absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+position:absolute;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 </style>
